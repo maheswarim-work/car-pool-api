@@ -126,3 +126,5 @@ The API returns appropriate HTTP status codes:
 ![PUT.png](images/PUT.png)
 
 ![DELETE.png](images/DELETE.png)
+
+![TERMINAL.png](images/TERMINAL.png)
