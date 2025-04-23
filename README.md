@@ -121,11 +121,8 @@ The API returns appropriate HTTP status codes:
 
 ![GET.png](images/GET.png)
 
-![PUT.png](images/PUT.png)
-
 ![GET-ID.png](images/GET-ID.png)
 
+![PUT.png](images/PUT.png)
+
 ![DELETE.png](images/DELETE.png)
-
-
-
