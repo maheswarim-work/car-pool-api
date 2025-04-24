@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import List, Optional
 from datetime import datetime
 
@@ -12,11 +12,11 @@ class CarPool(BaseModel):
     id: Optional[int] = None
     driver_name: str
     car_model: str
-    available_seats: int
+    available_seats: int = Field(gt=0, description="Number of available seats must be greater than 0")
     departure_time: datetime
     departure_location: str
     destination: str
-    price_per_seat: float
+    price_per_seat: float = Field(gt=0, description="Price per seat must be greater than 0")
     is_active: bool = True
 
 @app.get("/")
