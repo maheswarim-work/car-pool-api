@@ -1,5 +1,5 @@
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '16px'}, 'themeConfig': {'fontFamily': 'arial'}}}%%
+%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '20px', 'nodeBorder': '#333', 'lineColor': '#333', 'primaryColor': '#bbf', 'primaryTextColor': '#333', 'primaryBorderColor': '#333', 'nodeTextColor': '#333', 'clusterBkg': '#fff', 'clusterBorder': '#333'}, 'themeConfig': {'fontFamily': 'arial'}, 'flowchart': {'nodeSpacing': 50, 'rankSpacing': 50}}}%%
 graph TD
     A[Client] -->|HTTP Requests| B[CarPool API]
     
