@@ -3,26 +3,42 @@ graph TD
     A[Client] -->|HTTP Requests| B[CarPool API]
     
     subgraph API Endpoints
-        B --> C[GET /]
-        B --> D[GET /carpools]
-        B --> E[GET /carpools/{id}]
-        B --> F[POST /carpools]
-        B --> G[PUT /carpools/{id}]
-        B --> H[DELETE /carpools/{id}]
+        C[GET /]
+        D[GET /carpools]
+        E[GET /carpools/{id}]
+        F[POST /carpools]
+        G[PUT /carpools/{id}]
+        H[DELETE /carpools/{id}]
+        B --> C
+        B --> D
+        B --> E
+        B --> F
+        B --> G
+        B --> H
     end
 
     subgraph Data Model
         I[CarPool]
-        I --> J[Properties]
-        J --> K[id: Optional[int]]
-        J --> L[driver_name: str]
-        J --> M[car_model: str]
-        J --> N[available_seats: int > 0]
-        J --> O[departure_time: datetime]
-        J --> P[departure_location: str]
-        J --> Q[destination: str]
-        J --> R[price_per_seat: float > 0]
-        J --> S[is_active: bool]
+        J[Properties]
+        K[id: Optional[int]]
+        L[driver_name: str]
+        M[car_model: str]
+        N[available_seats: int > 0]
+        O[departure_time: datetime]
+        P[departure_location: str]
+        Q[destination: str]
+        R[price_per_seat: float > 0]
+        S[is_active: bool]
+        I --> J
+        J --> K
+        J --> L
+        J --> M
+        J --> N
+        J --> O
+        J --> P
+        J --> Q
+        J --> R
+        J --> S
     end
 
     subgraph In-Memory Storage
