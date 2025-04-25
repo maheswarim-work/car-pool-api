@@ -1,14 +1,14 @@
 ```mermaid
 graph TD
-    A[Client] -->|HTTP Requests| B[CarPool API ]
+    A[Client] -->|HTTP Requests| B[CarPool API]
     
     subgraph API Endpoints
-        C[GET /]
-        D[GET /carpools]
-        E[GET /carpools/{id}]
-        F[POST /carpools]
-        G[PUT /carpools/{id}]
-        H[DELETE /carpools/{id}]
+        C[Root GET]
+        D[List Carpools]
+        E[Get Carpool]
+        F[Create Carpool]
+        G[Update Carpool]
+        H[Delete Carpool]
         B --> C
         B --> D
         B --> E
@@ -20,15 +20,15 @@ graph TD
     subgraph Data Model
         I[CarPool]
         J[Properties]
-        K[id: Optional[int]]
-        L[driver_name: str]
-        M[car_model: str]
-        N[available_seats: int > 0]
-        O[departure_time: datetime]
-        P[departure_location: str]
-        Q[destination: str]
-        R[price_per_seat: float > 0]
-        S[is_active: bool]
+        K[ID]
+        L[Driver Name]
+        M[Car Model]
+        N[Available Seats]
+        O[Departure Time]
+        P[Departure Location]
+        Q[Destination]
+        R[Price Per Seat]
+        S[Is Active]
         I --> J
         J --> K
         J --> L
@@ -42,13 +42,13 @@ graph TD
     end
 
     subgraph In-Memory Storage
-        T[carpools: List[CarPool]]
+        T[CarPool List]
     end
 
     subgraph Response Codes
-        U[200: Success]
-        V[404: Not Found]
-        W[422: Validation Error]
+        U[Success 200]
+        V[Not Found 404]
+        W[Validation Error 422]
     end
 
     style A fill:#f9f,stroke:#333,stroke-width:2px
