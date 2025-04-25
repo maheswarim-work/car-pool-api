@@ -1,4 +1,5 @@
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '16px'}, 'themeConfig': {'fontFamily': 'arial'}}}%%
 graph TD
     A[Client] -->|HTTP Requests| B[CarPool API]
     
