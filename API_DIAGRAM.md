@@ -1,5 +1,5 @@
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '200px', 'nodeBorder': '#333', 'lineColor': '#333', 'primaryColor': '#bbf', 'primaryTextColor': '#333', 'primaryBorderColor': '#333', 'nodeTextColor': '#333', 'clusterBkg': '#fff', 'clusterBorder': '#333', 'fontSize': '200px'}, 'themeConfig': {'fontFamily': 'arial'}, 'flowchart': {'nodeSpacing': 500, 'rankSpacing': 500, 'padding': 150}}}%%
+%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '400px', 'nodeBorder': '#333', 'lineColor': '#333', 'primaryColor': '#bbf', 'primaryTextColor': '#333', 'primaryBorderColor': '#333', 'nodeTextColor': '#333', 'clusterBkg': '#fff', 'clusterBorder': '#333', 'fontSize': '400px'}, 'themeConfig': {'fontFamily': 'arial'}, 'flowchart': {'nodeSpacing': 1000, 'rankSpacing': 1000, 'padding': 300}}}%%
 graph TD
     A[Client] -->|HTTP Requests| B[CarPool API]
     
@@ -52,13 +52,13 @@ graph TD
         W[Validation Error 422]
     end
 
-    style A fill:#f9f,stroke:#333,stroke-width:15px
-    style B fill:#bbf,stroke:#333,stroke-width:15px
-    style I fill:#dfd,stroke:#333,stroke-width:15px
-    style T fill:#fdd,stroke:#333,stroke-width:15px
-    style U fill:#9f9,stroke:#333,stroke-width:15px
-    style V fill:#f99,stroke:#333,stroke-width:15px
-    style W fill:#ff9,stroke:#333,stroke-width:15px
+    style A fill:#f9f,stroke:#333,stroke-width:30px
+    style B fill:#bbf,stroke:#333,stroke-width:30px
+    style I fill:#dfd,stroke:#333,stroke-width:30px
+    style T fill:#fdd,stroke:#333,stroke-width:30px
+    style U fill:#9f9,stroke:#333,stroke-width:30px
+    style V fill:#f99,stroke:#333,stroke-width:30px
+    style W fill:#ff9,stroke:#333,stroke-width:30px
 ```
 
 # CarPool API Architecture
