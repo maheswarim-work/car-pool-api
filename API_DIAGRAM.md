@@ -1,6 +1,6 @@
 ```mermaid
 graph TD
-    A[Client] -->|HTTP Requests| B[CarPool API]
+    A[Client] -->|HTTP Requests| B[CarPool API ]
     
     subgraph API Endpoints
         C[GET /]
